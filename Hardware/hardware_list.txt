@@ -1,0 +1,25 @@
+12V 28BYJ-48 stepper motor - https://www.aliexpress.us/item/2251832673722533.html?gatewayAdapt=glo2usa4itemAdapt
+
+KY-003 Standard Hall Magnetic Sensor Module for Arduino - https://www.amazon.com/Effect-Magnetic-Sensor-Arduino-MXRS/dp/B085KVV82D
+
+2x1 mm disk neodymium magnet - https://www.amazon.com/gp/product/B0BKXZ2T2P/ref=ewc_pr_img_1?smid=A2NNCICTTSUF0V&psc=1
+
+M3 heat-set threaded insert - https://www.amazon.com/gp/product/B08BCRZZS3
+
+M2 heat-set threaded insert - https://www.amazon.com/gp/product/B088QJG676
+
+22 AWG silicone wire - https://www.amazon.com/CBAZY-Stranded-Flexible-Silicone-Electric/dp/B073RF4YY4
+
+26 AWG stranded wire - https://www.amazon.com/CBAZY-Stranded-Flexible-Silicone-Electric/dp/B073RDK4C9
+
+Rocker switch - https://www.amazon.com/DaierTek-250VAC-Rocker-KCD1-101-Plastic/dp/B07S2QJKTX
+
+12v Power supply - https://www.amazon.com/Chanzon-Switching-Adapter-100-240V-Transformer/dp/B07HNL5D56
+
+DC socket (might replace this later with something better/different) - https://www.amazon.com/dp/B09H5L3KN5
+
+wire connectors - https://www.amazon.com/GeeBat-460pcs-Connector-Housing-Adapter/dp/B01MCZE2HM
+
+Arduino Nano - https://www.amazon.com/gp/product/B0713XK923
+
+ESP-101S - https://www.amazon.com/dp/B08QF24GZZ
