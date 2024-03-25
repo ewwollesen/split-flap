@@ -80,22 +80,20 @@ This is how my 10 units are set, 1 means switch is in the up-position:
 | 0000 | 0001 | 0010 | 0011 | 0100 | 0101 | 0110 | 0111 | 1000 | 1001 |
 
 ### ESP01/ESP8266
-#### Pre-requistites
+#### Pre-requisites
 To upload the sketch to the ESP you need to install a few things to your arduino IDE.
 - Install the ESP8266 board to your Arduino IDE. You can follow [this tutorial](https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/) 
 - Install the arduino ESP8266 littleFS plugin to use the file system of the ESP, you can follow [this tutorial](https://randomnerdtutorials.com/install-esp8266-nodemcu-littlefs-arduino/) 
 - Install the following libraries via Library Manager:
-  - [Arduino_JSON](https://github.com/arduino-libraries/Arduino_JSON)
-  - [NTPClient](https://github.com/arduino-libraries/NTPClient)
-  - [ezTime](https://github.com/ropg/ezTime)
-  - [LinkedList](https://github.com/ivanseidel/LinkedList)
-  - [WiFiManager](https://github.com/tzapu/WiFiManager)
-- Install the following libraries via including the included `.zip` folders in the `ArduinoLibraries` in this repository in your Arduino Libraries IDE libaries folder:
-	- ESPAsyncWebServer
-    	- Downloaded From: https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip
-    	- This library was modified to add a namespace to the `LinkedList` used within its internals to avoid conflicts with `LinkedList` library
-	- ESPAsyncTCP 
-    	- Downloaded From: https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip
+  - [ArduinoJSON](https://github.com/bblanchon/ArduinoJson) - Version: 7.0.3
+  - [ESPAsyncWebSrv](https://github.com/dvarrel/ESPAsyncWebSrv) - Version: 1.2.7
+    - Dependencies which should be installed automatically:
+      - [ESPAsyncTCP](https://github.com/dvarrel/ESPAsyncTCP)
+      - [AsyncTCP](https://github.com/dvarrel/AsyncTCP)
+  - [NTPClient](https://github.com/arduino-libraries/NTPClient) - Version: 3.2.1
+  - [ezTime](https://github.com/ropg/ezTime) - Version: 0.8.3
+  - [LinkedList](https://github.com/ivanseidel/LinkedList) - Version: 1.3.3
+  - [WiFiManager](https://github.com/tzapu/WiFiManager) - Version: 2.0.17
 
 To upload sketches to the ESP8266 you can either use an [Arduino Uno](https://create.arduino.cc/projecthub/pratikdesai/how-to-program-esp8266-esp-01-module-with-arduino-uno-598166) or you can buy a dedicated programmer. It is highly recommend getting a programmer as it makes uploading programs onto the ESP8266 much faster. 
 
@@ -149,8 +147,9 @@ There are several helper `define` variables to help during debugging/running:
 #### Sketch Upload
 So far we've only uploaded static files to the ESP8266. You now need to `Upload` the sketch to the ESP8266. Click on Upload and the ESP8266 will be upadted with the sketch and you are done. Stick the ESP8266 onto the first unit's PCB and navigate to the IP-address the ESP8266 is getting assigned from your router.
 
-### Common Mistakes
+### Common Problems
 - If the ESP is not talking to the units correctly, check the `UNITSAMOUNT` in the `ESPMaster.ino`. The amount of units connected has to match.
 - Ensure you upload the sketch and the LittleFS sketch upload to the ESP8266. 
 - When the system is powered, your Hall Sensor should only light up when a magnet is nearby. 
 - Ensure you are running an older version of Arduino IDE to be able to upload static files to the device. You will need a version prior to version 2.x.
+- User [@beroliv](https://github.com/beroliv) has reported having issues with WiFi connections. One solution they have proposed is soldering a wire to the antenna to be able to extend its range by creating an antenna. Here is the [link](https://www.stall.biz/project/verbesserte-wlan-konnektivitaet-mit-externen-antennen-fuer-wiffi-weatherman-und-andere-module-mit-esp8266/) (in German but Google Translate does a good job for other languages) they provided to detail the solution. Please take care when carrying out this solution. Thank you for the information [@beroliv](https://github.com/beroliv)!
