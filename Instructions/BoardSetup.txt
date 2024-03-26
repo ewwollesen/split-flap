@@ -1,0 +1,12 @@
+1. Install Arduino IDE v1.x
+    https://www.arduino.cc/en/software/OldSoftwareReleases
+    https://downloads.arduino.cc/arduino-1.8.19-windows.exe
+2. Power up board with Uno and ESP01 installed. Power LED (POW) should be lit up.
+3. Connect USB cable to Arduino
+4. Open the `unit.io` file from the split-flap/Unit folder of the repo
+5. In the IDE, go to Tools -> Port and select the appropriate COM port. In my case it was COM3, but maybe than can vary?
+6. It should tell you down at the bottom of the IDE if the install was successful.
+
+Set up the ESP01
+
+follow instructions on repo
